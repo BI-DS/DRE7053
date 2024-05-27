@@ -34,3 +34,10 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [8] [Variational Mixture-of-Experts Autoencoders for Multi-Modal Deep Generative Models](https://arxiv.org/abs/1911.03393)
 * [9] [Discriminative multimodal learning via conditional priors in generative models](https://doi.org/10.1016/j.neunet.2023.10.048)
 * [10] [Deep Generative Models in Credit Scoring](https://munin.uit.no/handle/10037/20407)
+
+## Evaluation 
+* Individual paper, limited to 8 content pages
+* Pass/fail
+* Ideas for the paper: 
+  - Replicate a previous work with your own data and problem setting 
+  - Propose a new idea/model, related to your own research, clearly stating the research question(s), method(s) (including the derivation of the ELBO), and experimental design
