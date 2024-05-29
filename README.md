@@ -19,21 +19,22 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
   - Bound on Mutual Information [4,5,9]
   - Posterior Collapse [5,6]
 * Multimodal Learning
-  - Multimodal VAEs [7,8,9]
-  - Product and Mixture of Experts [7,8]
-  - Cross-Modal Generation [7,8,9]
+  - Multimodal VAEs [7,8,9,10]
+  - Product and Mixture of Experts [7,8,9]
+  - Cross-Modal Generation [7,8,9,10]
 
 ## Papers
 * [1] [Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
-* [2] [Advances in Variational Inference](https://arxiv.org/abs/1711.05597)
-* [3] [:fire: Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
-* [4] [ELBO surgery: yet another way to carve up the variational evidece lower bound](http://approximateinference.org/accepted/HoffmanJohnson2016.pdf)
+* [2] [:fire: Advances in Variational Inference :fire:](https://arxiv.org/abs/1711.05597)
+* [3] [:fire: Auto-Encoding Variational Bayes :fire:](https://arxiv.org/abs/1312.6114)
+* [4] [:fire: ELBO surgery: yet another way to carve up the variational evidece lower bound :fire:](http://approximateinference.org/accepted/HoffmanJohnson2016.pdf)
 * [5] [Avoiding Latent Variables Collapse with Generative Skip Models](https://arxiv.org/abs/1807.04863)
 * [6] [Don't Blame the ELBO! A Linear VAE Perspective on Posterior Collapse](https://arxiv.org/abs/1911.02469)
-* [7] [Multimodal Generative Models for Scalable Weakly-Supervised Learning](https://arxiv.org/abs/1802.05335)
+* [7] [:fire: Multimodal Generative Models for Scalable Weakly-Supervised Learning :fire:](https://arxiv.org/abs/1802.05335)
 * [8] [Variational Mixture-of-Experts Autoencoders for Multi-Modal Deep Generative Models](https://arxiv.org/abs/1911.03393)
-* [9] [Discriminative multimodal learning via conditional priors in generative models](https://doi.org/10.1016/j.neunet.2023.10.048)
-* [10] [Deep Generative Models in Credit Scoring](https://munin.uit.no/handle/10037/20407)
+* [9] [:fire: Generalized Multimodal ELBO :fire:](https://arxiv.org/abs/2105.02470)
+* [10] [Discriminative multimodal learning via conditional priors in generative models](https://doi.org/10.1016/j.neunet.2023.10.048)
+* [11] [Deep Generative Models in Credit Scoring](https://munin.uit.no/handle/10037/20407)
 
 ## Evaluation 
 * Individual paper, limited to 8 content pages
