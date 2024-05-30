@@ -27,7 +27,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [1] [Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
 * [2] [:fire: Advances in Variational Inference :fire:](https://arxiv.org/abs/1711.05597)
 * [3] [:fire: Auto-Encoding Variational Bayes :fire:](https://arxiv.org/abs/1312.6114)
-* [4] [:fire: ELBO surgery: yet another way to carve up the variational evidece lower bound :fire:](http://approximateinference.org/accepted/HoffmanJohnson2016.pdf)
+* [4] [:fire: ELBO surgery: yet another way to carve up the variational evidece lower bound :fire:](https://www.cs.columbia.edu/~blei/fogm/2020F/readings/HoffmanJohnson2016.pdf)
 * [5] [Avoiding Latent Variables Collapse with Generative Skip Models](https://arxiv.org/abs/1807.04863)
 * [6] [Don't Blame the ELBO! A Linear VAE Perspective on Posterior Collapse](https://arxiv.org/abs/1911.02469)
 * [7] [:fire: Multimodal Generative Models for Scalable Weakly-Supervised Learning :fire:](https://arxiv.org/abs/1802.05335)
