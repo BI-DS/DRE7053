@@ -7,16 +7,16 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 
 ## Reading Material 
 * Probabilistical Graphical Models
-  - Directed Graphical Models [10] 
+  - Directed Graphical Models [11] 
 * Variational Inference 
   - Latent Variable Models
   - Variational Inference [1,2]
-  - Deriving the Evidence Lower Bound [3,10]
+  - Deriving the Evidence Lower Bound [3,11]
 * Variational Autoencoder [3]
   - Amortized Inference [2]
-  - Reparameterization Trick [3,10]
+  - Reparameterization Trick [3,11]
 * Should we optimize the ELBO?
-  - Bound on Mutual Information [4,5,9]
+  - Bound on Mutual Information [4,5,10]
   - Posterior Collapse [5,6]
 * Multimodal Learning
   - Multimodal VAEs [7,8,9,10]
