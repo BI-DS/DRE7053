@@ -22,6 +22,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
   - Multimodal VAEs [7,8,9,10]
   - Product and Mixture of Experts [7,8,9]
   - Cross-Modal Generation [7,8,9,10]
+* Clustering with VAEs [12]
 
 ## Papers
 * [1] [Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
@@ -35,6 +36,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [9] [:fire: Generalized Multimodal ELBO :fire:](https://arxiv.org/abs/2105.02470)
 * [10] [Discriminative multimodal learning via conditional priors in generative models](https://doi.org/10.1016/j.neunet.2023.10.048)
 * [11] [Deep Generative Models in Credit Scoring](https://munin.uit.no/handle/10037/20407)
+* [12] [Variational Deep Embedding](https://arxiv.org/abs/1611.05148)
 
 ## Evaluation 
 * Individual paper, limited to 8 content pages
