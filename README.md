@@ -6,7 +6,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 **Note:** The course will be offered for the first time in the NORA Summer School 2024 at UiA. 
 
 ## Reading Material 
-* Probabilistical Graphical Models
+* Probabilistic Graphical Models
   - Directed Graphical Models [11] 
 * Variational Inference 
   - Latent Variable Models
