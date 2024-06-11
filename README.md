@@ -38,7 +38,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [10] [Discriminative multimodal learning via conditional priors in generative models](https://doi.org/10.1016/j.neunet.2023.10.048)
 * [11] [Deep Generative Models in Credit Scoring](https://munin.uit.no/handle/10037/20407)
 * [12] [Variational Deep Embedding](https://arxiv.org/abs/1611.05148)
-* [13] [Semi-supervised Learning with Deep Generative Models](https://arxiv.org/abs/1406.5298)
+* [13] [:fire: Semi-supervised Learning with Deep Generative Models :fire:](https://arxiv.org/abs/1406.5298)
 * [14] [Deep Generative Models for Reject Inference in Credit Scoring](https://www.sciencedirect.com/science/article/pii/S0950705120301660)
 
 ## Evaluation 
