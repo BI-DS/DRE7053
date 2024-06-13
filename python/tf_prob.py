@@ -14,4 +14,4 @@ mvn = tfd.MultivariateNormalDiag(
 # vector.
 x = [[-1., 0, 1],
      [-11, 0, 11.]]   # shape: [2, 3].
-mvn.prob(x).numpy()           # shape: [2]
+print(mvn.prob(x).numpy())           # shape: [2]
