@@ -15,3 +15,4 @@ mvn = tfd.MultivariateNormalDiag(
 x = [[-1., 0, 1],
      [-11, 0, 11.]]   # shape: [2, 3].
 print(mvn.prob(x).numpy())           # shape: [2]
+print(mvn.sample())
