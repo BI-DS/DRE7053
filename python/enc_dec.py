@@ -23,9 +23,9 @@ class EncoderGaussian(layers.Layer):
         self.n_samples = n_samples
 
     def call(self, inputs, training=True):
-        x = self.hidden_layers(inputs,training=training)
-        z_mean = self.mu(x)
-        z_log_var = self.log_var(x)
+        o = self.hidden_layers(inputs,training=training)
+        z_mean = self.mu(o)
+        z_log_var = self.log_var(o)
         z = self.sampling((z_mean, z_log_var), n_samples = self.n_samples)
 
         return z_mean, z_log_var, z
@@ -54,6 +54,6 @@ class DecoderBernoulli(layers.Layer):
         self.mu = layers.Dense(original_dim, activation='sigmoid')
 
     def call(self, inputs, training=True):
-        x = self.hidden_layers(inputs, training=training)
-        x_recon = self.mu(x)
+        o = self.hidden_layers(inputs, training=training)
+        x_recon = self.mu(o)
         return x_recon

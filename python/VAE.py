@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from losses import log_diag_mvn, kld_unit_mvn, binary_crossentropy, loss_q_logp, compute_mmd, log_normal_pdf
+from losses import log_diag_mvn, kld_unit_mvn
 from enc_dec import EncoderGaussian, DecoderBernoulli, DecoderGaussian
 import tensorflow as tf 
 import numpy as np
@@ -14,7 +14,7 @@ class VAE(tf.keras.Model):
                 name='vae',
                 decoder_type ='Gaussian',
                 **kwargs):
-        super(VAE, self).__init__(name=name, **kwargs)
+        super().__init__(name=name, **kwargs)
        
         # q(z|x)
         self.encoder = EncoderGaussian(latent_dim, layers_size=layers_size_enc, n_samples=n_samples)
