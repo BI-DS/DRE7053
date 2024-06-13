@@ -64,7 +64,7 @@ class Encoder(layers.Layer):
             tfkl.Flatten(),
             tfkl.Dense(2 * latent_dim),
             tfpl.DistributionLambda(lambda t: tfd.MultivariateNormalDiag(
-                    loc=t[..., :latent_dim], scale_diag=tf.math.exp(t[..., latent_dim:]),scale_identity_multiplier=None)),
+                    loc=t[..., :latent_dim], scale_diag=tf.math.exp(t[..., latent_dim:]))),
             ]
             )
         self._latent_dim = latent_dim
