@@ -33,7 +33,7 @@ def display_imgs(x, name, dset, y=None):
   for i in range(n):
     axs.flat[i].imshow(x[i].squeeze(), interpolation='none', cmap='gray')
     axs.flat[i].axis('off')
-  plt.show()
+  #plt.show()
   plt.savefig(os.path.join('../output',name+'_'+dset+'.png'))
   plt.close()
   plt.ion()
