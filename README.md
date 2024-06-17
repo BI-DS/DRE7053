@@ -51,6 +51,21 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [2] [ELBOs](https://yugeten.github.io/posts/2020/06/elbo/)
 * [3] [Diffusion Models](https://github.com/FilippoMB/Diffusion_models_tutorial)
 
+## Usage
+You can run the codes in the folder `python` directly from `Google Colab` as follows
+```python
+# clone repository
+!git clone https://github.com/BI-DS/DRE7053.git
+
+# move to right folder and create output folder
+%cd DRE7053
+!mkdir output
+%cd python
+
+# train VAE
+!python ./train_VAE_prob.py --epochs 3
+```
+
 ## Evaluation 
 * Individual paper, limited to 8 content pages
 * Pass/fail
