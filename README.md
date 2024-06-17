@@ -47,9 +47,9 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [18] [Improved denoising diffusion probabilistic models](https://arxiv.org/abs/2102.09672)
 
 ## Tutorials
-* [2] [VAEs](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
-* [3] [ELBOs](https://yugeten.github.io/posts/2020/06/elbo/)
-* [1] [Diffusion Models](https://github.com/FilippoMB/Diffusion_models_tutorial)
+* [1] [VAEs](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+* [2] [ELBOs](https://yugeten.github.io/posts/2020/06/elbo/)
+* [3] [Diffusion Models](https://github.com/FilippoMB/Diffusion_models_tutorial)
 
 ## Evaluation 
 * Individual paper, limited to 8 content pages
