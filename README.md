@@ -24,6 +24,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
   - Cross-Modal Generation [7,8,9,10]
 * Clustering with VAEs [12]
 * Semi-supervised Learning [13,14]
+* Diffusion Models [15,16,17,18]
 
 ## Papers
 * [1] [Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
@@ -40,6 +41,15 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [12] [Variational Deep Embedding](https://arxiv.org/abs/1611.05148)
 * [13] [:fire: Semi-supervised Learning with Deep Generative Models :fire:](https://arxiv.org/abs/1406.5298)
 * [14] [Deep Generative Models for Reject Inference in Credit Scoring](https://www.sciencedirect.com/science/article/pii/S0950705120301660)
+* [15] [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585)
+* [16] [:fire: Denoising Diffusion Probabilistic Models :fire:](https://arxiv.org/abs/2006.11239)
+* [17] [Denoising diffusion implicit models](https://arxiv.org/abs/2010.02502)
+* [18] [Improved denoising diffusion probabilistic models](https://arxiv.org/abs/2102.09672)
+
+## Tutorials
+* [2] [VAEs](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+* [3] [ELBOs](https://yugeten.github.io/posts/2020/06/elbo/)
+* [1] [Diffusion Models](https://github.com/FilippoMB/Diffusion_models_tutorial)
 
 ## Evaluation 
 * Individual paper, limited to 8 content pages
