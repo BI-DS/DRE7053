@@ -52,7 +52,7 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [3] [Diffusion Models](https://github.com/FilippoMB/Diffusion_models_tutorial)
 
 ## Usage
-You can run the codes in the folder `python` directly from `Google Colab` as follows
+You can run the codes in the folder `python` directly from `Google Colab` (make sure your session uses a GPU) as follows
 ```python
 # clone repository
 !git clone https://github.com/BI-DS/DRE7053.git
