@@ -1,0 +1,42 @@
+kind: Job 
+apiVersion: batch/v1
+metadata:
+  name: vae 
+spec:
+  parallelism: 1
+  template:
+    spec:
+      restartPolicy: OnFailure 
+      containers:
+        - name: spot
+          image: "rogelioandrade/calmmvae:v1"
+          workingDir: /mnt/azure/DRE7053/python
+          command: ["bash","./running_vae.sh"]
+          volumeMounts:
+          - name: azure
+            mountPath: /mnt/azure     
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+          env:
+          - name: WANDB_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: wandb-secret
+                key: secret
+          imagePullPolicy: Always
+      nodeSelector:
+        spotnode1/gpu: "true"
+      tolerations:
+        - key: sku
+          operator: "Equal"
+          value: "gpu"
+          effect: "NoSchedule"  
+        - key: "kubernetes.azure.com/scalesetpriority"
+          operator: "Equal"
+          value: "spot"
+          effect: "NoSchedule" 
+      volumes:
+      - name: azure
+        persistentVolumeClaim:
+          claimName: azurefile-csi

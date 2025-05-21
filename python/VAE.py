@@ -39,10 +39,10 @@ class VAE(tf.keras.Model):
                 x2_hat = self.decoder(input_to_decoder, training=training)
                 _recon_loss += log_diag_mvn(x2,x2_hat)
         elif self.decoder_type == 'Gaussian': 
-            for i in range(len(zpost)):
+            for i in range(len(z)):
                 input_to_decoder = z[i]
                 x_mu, x_log_var, x2_hat = self.decoder(input_to_decoder, training=training)
-                _recon_loss += log_diag_mvn(x_mu,tf.math.exp(x_log_var))(x2)
+                _recon_loss += log_diag_mvn(x_mu,tf.math.exp(x_log_var))(inputs)
         
         recon_loss = tf.reduce_mean(_recon_loss)
         

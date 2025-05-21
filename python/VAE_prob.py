@@ -37,9 +37,9 @@ class VAE(tfk.Model):
             px_z = self.decoder(z)
            
             # pz, qz_x, and px_z are all pdf's!
-            elbo = px_z.log_prob(inputs) - tfd.kl_divergence(qz_x, self.pz)
+            self.elbo = px_z.log_prob(inputs) - tfd.kl_divergence(qz_x, self.pz)
             
-            self.loss = -tf.reduce_mean(elbo)
+            self.loss = -tf.reduce_mean(self.elbo)
 
         return qz_x, px_z
 
@@ -65,5 +65,5 @@ class VAE(tfk.Model):
         gradients = tape.gradient(self.loss, self.params)
         optimizer.apply_gradients(zip(gradients, self.params))
         
-        return enc_dec, self.loss
+        return enc_dec, self.elbo
 
