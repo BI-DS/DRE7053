@@ -156,7 +156,7 @@ def main():
     for epoch in range(epochs):
         print('training epoch {}'.format(epoch+1))
         for i, x_batch in enumerate(train_dataset):
-            enc_dec_elbo = vae.train(x_batch,optimizer,L=5)
+            enc_dec_elbo = vae.train(x_batch,optimizer,L=1)
             elbo = enc_dec_elbo[1]
             elbo_metric(elbo) 
         all_elbo.append(elbo_metric.result())
