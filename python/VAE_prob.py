@@ -3,10 +3,10 @@ import tensorflow as tf
 
 import tensorflow_probability as tfp
 
-tfk = tf.keras
+tfk  = tf.keras
 tfkl = tf.keras.layers
 tfpl = tfp.layers
-tfd = tfp.distributions
+tfd  = tfp.distributions
 
 
 class VAE(tfk.Model):
