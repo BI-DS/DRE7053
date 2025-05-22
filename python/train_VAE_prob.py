@@ -138,9 +138,9 @@ def main():
             )
 
     if args.dset == 'mnist':
-        (train_images, _), (test_images, _) = tf.keras.datasets.mnist.load_data()
+        (train_images, _), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
     elif args.dset == 'fashion_mnist':
-        (train_images, _), (test_images, _) = tf.keras.datasets.fashion_mnist.load_data()
+        (train_images, _), (test_images, test_labels) = tf.keras.datasets.fashion_mnist.load_data()
 
     train_images = preprocess_images(train_images)
     test_images  = preprocess_images(test_images)
@@ -168,7 +168,9 @@ def main():
     plt.savefig('../output/elbo_{}.pdf'.format(args.dset))
     plt.close()
 
-   # reconstruct 10 images from test
+    vae.draw_latent(test_images[:10000],test_labels)
+
+    # reconstruct 10 images from test
     x = test_images[:10]
     px_z = vae.reconstruct(x) 
     

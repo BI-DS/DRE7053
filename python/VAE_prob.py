@@ -1,7 +1,8 @@
 import numpy as np
 import tensorflow as tf 
-
+import matplotlib.pyplot as plt
 import tensorflow_probability as tfp
+from sklearn.manifold import TSNE
 
 tfk  = tf.keras
 tfkl = tf.keras.layers
@@ -50,7 +51,21 @@ class VAE(tfk.Model):
         
         px_z = self.decoder(z)
         return px_z 
-    
+   
+    def draw_latent(self, x, labels):
+        qz_x = self.encoder(x)
+        z    = qz_x.sample().numpy()
+        if self.latent_dim > 2:
+            print('reducing to 2 dim with tsne....')
+            z = TSNE(n_components=2).fit_transform(z)
+
+        cmap = plt.get_cmap('jet', 10)
+        fig, ax = plt.subplots()
+        cax = ax.scatter(z[:,0],z[:,1],s=4,c=labels,cmap=cmap)
+        fig.colorbar(cax)
+        plt.savefig('../output/latent_space.pdf')
+        plt.close()
+
     # use prior to generate. returns a density function 
     def generate(self, L=10):
         z = self.pz.sample(L) 

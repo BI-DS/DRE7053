@@ -9,7 +9,8 @@ spec:
       restartPolicy: OnFailure 
       containers:
         - name: spot
-          image: "rogelioandrade/calmmvae:v1"
+          #image: "rogelioandrade/calmmvae:v1"
+          image: "rogelioandrade/coevae:v3"
           workingDir: /mnt/azure/DRE7053/python
           command: ["bash","./running_vae.sh"]
           volumeMounts:
