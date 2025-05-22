@@ -36,7 +36,7 @@ def display_imgs(x, name, dset, y=None):
   #plt.show()
   plt.savefig(os.path.join('../output',name+'_'+dset+'.png'))
   plt.close()
-  plt.ion()
+  #plt.ion()
 
 class Encoder(layers.Layer):
     def __init__(self,
@@ -150,17 +150,25 @@ def main():
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
     
     epochs = args.epochs 
-    loss_metric = tf.keras.metrics.Mean()
+    elbo_metric = tf.keras.metrics.Mean()
+    all_elbo=[]
 
     for epoch in range(epochs):
         print('training epoch {}'.format(epoch+1))
         for i, x_batch in enumerate(train_dataset):
-            enc_dec_loss = vae.train(x_batch,optimizer,L=5)
-            loss = enc_dec_loss[1]
-            loss_metric(loss) 
-        print('loss {:.4f}'.format(loss_metric.result()))
+            enc_dec_elbo = vae.train(x_batch,optimizer,L=1)
+            elbo = enc_dec_elbo[1]
+            elbo_metric(elbo) 
+        all_elbo.append(elbo_metric.result())
+        print('ELBO {:.4f}'.format(elbo_metric.result()))
 
-    # reconstruct 10 images from test
+    plt.plot(all_elbo)
+    plt.xlabel('epoch')
+    plt.ylabel('ELBO')
+    plt.savefig('../output/elbo_{}.pdf'.format(args.dset))
+    plt.close()
+
+   # reconstruct 10 images from test
     x = test_images[:10]
     px_z = vae.reconstruct(x) 
     

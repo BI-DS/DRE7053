@@ -19,10 +19,11 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
   - Bound on Mutual Information [4,5,10]
   - Posterior Collapse [5,6]
 * Multimodal Learning
-  - Multimodal VAEs [7,8,9,10]
+  - Multimodal VAEs [7,8,9,10,20]
   - Product and Mixture of Experts [7,8,9]
-  - Cross-Modal Generation [7,8,9,10]
-* Clustering with VAEs [12]
+  - Cross-Modal Generation [7,8,9,10,20]
+  - Consensus of Dependent Distributions [20]
+* Clustering with VAEs [12,19]
 * Semi-supervised Learning [13,14]
 * Diffusion Models [15,16,17,18]
 
@@ -45,6 +46,8 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 * [16] [:fire: Denoising Diffusion Probabilistic Models :fire:](https://arxiv.org/abs/2006.11239)
 * [17] [Denoising diffusion implicit models](https://arxiv.org/abs/2010.02502)
 * [18] [Improved denoising diffusion probabilistic models](https://arxiv.org/abs/2102.09672)
+* [19] [Deep variational incomplete multi-view clustering: exploring shared clustering structures](https://ojs.aaai.org/index.php/AAAI/article/view/29548)
+* [20] [Aggregation of Dependent Expert Distributions in Multimodal Variational Autoencoders](https://arxiv.org/abs/2505.01134)
 
 ## Tutorials
 * [1] [VAEs](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
@@ -54,6 +57,10 @@ Repository for the DRE7053 Generative Models course, where you can find all the 
 ## Usage
 You can run the codes in the folder `python` directly from `Google Colab` (make sure your session uses a GPU) as follows
 ```python
+# download right version of tf (still using keras 2)
+!pip install tensorflow==2.15.0 &> /dev/null
+!pip install tensorflow-probability[tensorflow]==0.23 &> /dev/null
+
 # clone repository
 !git clone https://github.com/BI-DS/DRE7053.git
 
